@@ -18,7 +18,7 @@ echo "Cleaning..."
 printf "${RED}Running libf-unit-test:${COLOR_STOP}"
 echo
 (cd ./libft-unit-test && make f) | pv -s 13457 -w 80 > ./results/unit-test-results.txt
-cp ./libft-unit-test/result.log unit-test-results.txt
+cp ./libft-unit-test/result.log ./results/unit-test-results.txt
 printf "${GREEN}Test done!${COLOR_STOP}"
 echo "Cleaning..."
 rm ../libft.so
